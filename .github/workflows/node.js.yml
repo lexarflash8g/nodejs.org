@@ -40,5 +40,4 @@ jobs:
         script: |
           cd ~/nodejs.org/ # navigate into the folder
           git pull 
-          kill %1 
           npm start & 
