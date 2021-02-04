@@ -34,7 +34,7 @@ jobs:
     - name: Deploy NodeJS app
       uses: appleboy/ssh-action@v0.1.2
       with:
-        host: $${ secrets.SSH_HOST }}
+        host: ${{ secrets.SSH_HOST }}
         username: root
         password: ${{ secrets.SSH_PASSWORD }}
         script: |
